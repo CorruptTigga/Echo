@@ -66,6 +66,9 @@ function clearSearchResults() {
 // Handle sidebar navigation clicks
 linksContainer.addEventListener("click", (e) => {
   if (e.target.tagName !== "A") return;
+
+  if (e.target.hasAttribute("data-file") !== true) return;
+
   e.preventDefault();
   const file = e.target.getAttribute("data-file");
   setActiveLink(e.target);

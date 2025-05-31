@@ -1,0 +1,135 @@
+/* Base and layout */
+:root {
+  --primary-color: #190a33;
+  --secondary-color: #6441a5;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #09080e;
+  color: #ddd;
+  display: flex;
+  height: 100vh;
+}
+#sidebar {
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+  background: var(--primary-color);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-right: 2px solid var(--secondary-color);
+}
+#sidebar h2 {
+  color: #bda0ff;
+  margin-top: 0;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#sidebar a {
+  display: block;
+  color: #dad3fa;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+#sidebar a:hover,
+#sidebar a.active {
+  background-color: var(--secondary-color);
+  color: #e7e1ff;
+}
+#sidebar #header {
+  display: flex;
+  height: 32px;
+  padding: 10px;
+  justify-content: center;
+}
+#sidebar #header img {
+  padding-right: 10px;
+}
+#content {
+  flex-grow: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+  background: #100e18;
+  line-height: 1.6;
+}
+/* Markdown content styles */
+#content h1,
+#content h2,
+#content h3,
+#content h4 {
+  color: #bda0ff;
+}
+#content p {
+  color: #ddd;
+}
+#content pre {
+  background-color: var(--primary-color);
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+#content code {
+  background-color: var(--primary-color);
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+}
+#content blockquote {
+  border-left: 4px solid var(--secondary-color);
+  margin-left: 0;
+  padding-left: 15px;
+  color: #b8a9e8;
+  font-style: italic;
+}
+#content ul,
+#content ol {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+/* Add a bit of styling for the search input */
+#search-container {
+  padding-bottom: 10px;
+}
+#search-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: #2a1d58;
+  color: #ddd;
+}
+#search-results {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+  background: var(--primary-color);
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+}
+#search-results div {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--secondary-color);
+}
+#search-results div:last-child {
+  border-bottom: none;
+}
+#search-results div:hover {
+  background-color: var(--secondary-color);
+  color: #e7e1ff;
+}
+.highlight {
+  background: rgba(255, 255, 0, 0.3);
+  border-radius: 4px;
+  padding: 2px;
+}

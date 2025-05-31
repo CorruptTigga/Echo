@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Echo Docs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.7/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav id="sidebar">
+      <a href="/index.html" data-file="overview.md" id="header">
+        <img src="icon.png" width="32" />
+        <h2>Echo Docs</h2>
+      </a>
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search docs..."
+          autocomplete="off"
+        />
+        <div id="search-results" style="display: none"></div>
+      </div>
+      <div id="nav-links">
+        <a href="#" data-file="overview.md" class="active">Overview</a>
+        <a href="#" data-file="page1.md">NPC Generation</a>
+        <a href="#" data-file="page2.md">Player Interaction</a>
+        <a href="#" data-file="page3.md">Time System</a>
+        <a href="#" data-file="page4.md">Emotional Modeling</a>
+        <a href="#" data-file="page5.md">Pregnancy & Generations</a>
+        <a href="#" data-file="page6.md">Factions & Cultures</a>
+        <a href="#" data-file="page7.md">Combat & Skills</a>
+        <a href="#" data-file="page8.md">Content Boundaries</a>
+        <a href="#" data-file="page9.md">Save/Load System</a>
+        <a href="#" data-file="page10.md">LLM Integration</a>
+      </div>
+    </nav>
+
+    <main id="content">Loading...</main>
+    <script src="docs-handler.js"></script>
+  </body>
+</html>

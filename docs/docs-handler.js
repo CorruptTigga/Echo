@@ -158,7 +158,12 @@ searchResults.addEventListener("click", (e) => {
     const sectionId = e.target.dataset.sectionId || "";
     clearSearchResults();
     searchInput.value = "";
-    setActiveLink(null);
+
+    const sidebarLink = [...linksContainer.querySelectorAll("a")].find(
+      (a) => a.getAttribute("data-file") === file
+    );
+    setActiveLink(sidebarLink);
+
     loadMarkdown(file, sectionId);
   }
 });

@@ -26,7 +26,7 @@
 This project is **proprietary and closed-source**.
 
 All rights reserved.  
-For permission inquiries, please contact: [your.email@example.com]
+For permission inquiries, please contact: sportsnut2020@gmail.com
 
 ## 📄 Documentation
 

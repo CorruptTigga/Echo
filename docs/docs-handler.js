@@ -3,6 +3,15 @@ const content = document.getElementById("content");
 const searchInput = document.getElementById("search-input");
 const searchResults = document.getElementById("search-results");
 
+document.querySelectorAll('.dropdown-header').forEach(header => {
+  header.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      if (drop !== header.parentElement) drop.classList.remove('open');
+    });
+    header.parentElement.classList.toggle('open');
+  });
+});
+
 // Load Markdown content function
 async function loadMarkdown(file, scrollToId) {
   try {

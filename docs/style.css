@@ -133,3 +133,25 @@ body {
   border-radius: 4px;
   padding: 2px;
 }
+/* Dropdown logic */
+.dropdown {
+  margin: 4px 0;
+}
+.dropdown-header {
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #bbb;
+  font-weight: bold;
+}
+.dropdown-items {
+  padding-left: 24px;
+  display: none;
+  flex-direction: column;
+}
+.dropdown.open .dropdown-items {
+  display: flex;
+}
+.dropdown-items a {
+  font-size: 0.95em;
+  color: #ccc;
+}

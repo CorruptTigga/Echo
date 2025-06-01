@@ -1,10 +1,10 @@
 /* Base and layout */
 :root {
-  --background-color: #180034;
+  --background-color: #6ba8bb;
   --primary-color: #dcdcdc;
   --primary-hover: #bcbcbc;
-  --secondary-color: #ff4057;
-  --secondary-hover: #cc3345;
+  --secondary-color: #30495d;
+  --secondary-hover: #021825;
 }
 
 body {
